@@ -3,8 +3,10 @@
 # Linux user listing
 # by hvn@familug.org
 
-set infile [open "/etc/passwd" r]
-set texts [read -nonewline $infile]
+set fid [open "/etc/passwd" r]
+set texts [read -nonewline $fid]
+close $fid
+
 set lines [split $texts "\n"]
 foreach line $lines {
     set fields [split $line ":"]
