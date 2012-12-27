@@ -12,6 +12,8 @@ Ví dụ 2 dòng trong file này trên máy tớ::
 
 hvn, root chính là tên của 2 user trên máy.
 
-lời giải::
+cut solution
+------------
+::
 
     hvn@lappy: ~ $ cut -d ':' -f1 /etc/passwd
